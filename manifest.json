@@ -3,8 +3,7 @@
   "version": "0.1",
   "manifest_version": 2,
   "description": "交大選課系統與 FB 整合，推薦課程與留言功能。",
-  "default_locale": "zh_TW",
-  "update_url": "http://raw.github.com/tonytonyjan/nctu-course-plus/master/updateInfo.xml",
+  "homepage_url": "http://github.com/tonytonyjan/nctu-course-plus",
   "content_scripts": [
     {
       "matches": ["*://cos.adm.nctu.edu.tw/*"],
@@ -12,52 +11,29 @@
       "all_frames": true
     },
     {
-      // 首頁
       "matches": ["*://cos.adm.nctu.edu.tw/inHelp.asp*"],
       "js": ["js/inHelp.js"],
       "all_frames": true
     },
     {
-      // 課程清單
       "matches": ["*://cos.adm.nctu.edu.tw/Course/ProgramsMap/CrsList.asp*"],
       "js": ["js/Course-ProgramsMap-CrsList.js"],
       "all_frames": true
     },
     {
-      // 搜尋課程
+      "matches": ["*://cos.adm.nctu.edu.tw/Course/History/adList.ASP*"],
+      "js": ["js/Course-History-adList.js"],
+      "all_frames": true
+    },
+    {
       "matches": ["*://cos.adm.nctu.edu.tw/Course/Search_TeaCrs/GetCrsByName.asp*"],
       "js": ["js/Course-Search_TeaCrs-GetCrsByName.js"],
       "all_frames": true
     },
     {
-      // 課程綱要
       "matches": ["*://cos.adm.nctu.edu.tw/Course/CrsOutline/show.asp*"],
       "js": ["js/Course-CrsOutline-show.js"],
       "all_frames": true
     }
   ]
-  // "icons": { ... },
-  // "browser_action": {...},
-  // "page_action": {...},
-  // "theme": {...},
-  // "app": {...},
-  // Add any of these that you need
-  // "background": {...},
-  // "chrome_url_overrides": {...},
-  // "content_security_policy": "policyString",
-  // "file_browser_handlers": [...],
-  // "homepage_url": "http://path/to/homepage",
-  // "incognito": "spanning" or "split",
-  // "intents": {...}
-  // "key": "publicKey",
-  // "minimum_chrome_version": "versionString",
-  // "nacl_modules": [...],
-  // "offline_enabled": true,
-  // "omnibox": { "keyword": "aString" },
-  // "options_page": "aFile.html",
-  // "permissions": [...],
-  // "plugins": [...],
-  // "requirements": {...},
-  // "web_accessible_resources": [...],
-  // "sandbox": [...]
 }
