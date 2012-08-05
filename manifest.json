@@ -1,6 +1,6 @@
 {
   "name": "NCTU Course Plus",
-  "version": "0.1",
+  "version": "0.1.1",
   "manifest_version": 2,
   "description": "交大選課系統與 FB 整合，推薦課程與留言功能。",
   "homepage_url": "http://github.com/tonytonyjan/nctu-course-plus",
