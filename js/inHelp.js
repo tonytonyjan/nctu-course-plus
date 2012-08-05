@@ -1,0 +1,1 @@
+$('body').append('<center>' + FBCommentBox() + '</center>');
